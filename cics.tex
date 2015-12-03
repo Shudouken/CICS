@@ -434,7 +434,7 @@ Falls nicht konvergiert nächste Iteration E-Step
 It's a non-linear function so direct maximization is not possible, da die posteroir Wahrscheinlichkeit von der Likelihood Wahrscheinlichkeit abhängt.
 
 \subsubsection{What does the EM algorithm converge to?}
-Die Likelihood = Log-Likehood
+Auf die Maximum Likelihood.
 
 \subsubsection{How do you need to modify the EM algorithm to obtain the k-means algorithm? What does the k-means algorithm optimize?}
 
@@ -469,7 +469,7 @@ EM verwendet likelihood, diese ist parametrisiert. Gaußkern Methode ist nicht p
 Gegeben sind die Daten $X = x_1, \cdots ,x_N$. Ziel ist es die Parameter $\Theta$ des parametrischen Modells zu schätzen (über Maximum Likelihood Schätzer). Bei der Maximum-Likelihood Methode werden die Parameter $\Theta$ so geschätzt, dass die Likelihood-Funktion maximal wird, dabei sind die Daten $X$ fixiert und die zu schätzenden Parameter $\Theta$ variieren.
 Die Likelihood-Funktion ist definiert durch:
 \begin{align*}
-P(X|\Theta) = P(x_1, \cdots ,x_N | \Theta) = P(x_1|\Theta)P(x_2|x_1,\Theta) \cdots P(x_N|n_{N-1}, \cdots N_1,\Theta)
+P(X|\Theta) = P(x_1, \cdots ,x_N | \Theta) = P(x_1|\Theta)P(x_2|x_1,\Theta) \cdots P(x_N|x_{N-1}, \cdots x_1,\Theta)
 \end{align*}
 
 \subsubsection{What happens if the samples are not i.i.d?}
@@ -485,7 +485,7 @@ Die Klassifikation von $N$ Samples $X=\{\langle x_1,t_1 \rangle, \cdots , \langl
 \begin{align*}
 \underbrace{P(t|x)}_{\text{posterior Wahrscheinlichkeit}} = \frac{\overbrace{P(x|t)}^{\text{Likelihood;}} \overbrace{P(t)}^{\text{prior Wahrscheinlichkeit}}}{\underbrace{P(x)}_{\text{Skalierungsfaktor}}}
 \end{align*}
-$P(x)$ skaliert $P(t|x)$ sodass $\sum_t P(t|x) = 1$ und der Skalierungsfaktor ist für alle Klassen $t$ gleich groß. Um die Klassenzugehöärigkeit bestimmen zu können wählen wir jene Klasse mit der größten posterior Wahrscheinlichkeit. \\
+$P(x)$ skaliert $P(t|x)$ sodass $\sum_t P(t|x) = 1$ und der Skalierungsfaktor ist für alle Klassen $t$ gleich groß. Um die Klassenzugehörigkeit bestimmen zu können wählen wir jene Klasse mit der größten posterior Wahrscheinlichkeit. \\
 
 \subsubsection{Discuss the following simplifications of the Bayes classifier and their implications on the classification results: Neglecting the denominator and usage of the logarithm.}
 
