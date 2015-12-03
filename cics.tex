@@ -546,7 +546,7 @@ Bei LDA: Between-Class: $S_b = (m_{x,2}-m_{x,1})(m_{x,2}-m_{x,1})^T$, Within-Cla
 
 Knoten: Zufallsvariable \\
 Kanten: Die bedingten Abhängigkeiten. Knoten die nicht miteinander verbunden sind sind voneinander Unabhängig \\
-Jedem Knoten ist eine Wahrscheinlichkeitsfunktion zugeordnet. Jedem Knoten des Netzes ist eine bedinte Wahrscheinlichkeitsverteilung der durch ihn repräsentierten Zufallsvariable gegeben, die die Zufallsvariablen an den Elternknoten zuordnet.
+Jedem Knoten ist eine Wahrscheinlichkeitsfunktion zugeordnet. Jedem Knoten des Netzes ist eine bedingte Wahrscheinlichkeitsverteilung der durch ihn repräsentierten Zufallsvariable gegeben, die die Zufallsvariablen an den Elternknoten zuordnet.
 
 \subsection{Sie haben mehrere HMMs mit Parametern $\Theta_k$ sowie eine Beobachtungssequenz $X = x_1, \cdots , x_N$. Wie kann man entscheiden, von welchem HMM die Beobachtungssequnz erzeugt wurde? Nennen sie eine Anwendung!}
 Wir haben ein Evaluierungs-/Klassifizierungsproblem, daher benutzen wir den Forward/Backward Algorithmus. \\
@@ -562,7 +562,7 @@ Siehe \ref{bayes}
 Die a-priori Anteilswahrscheinlchkeiten für das Auftreten einer Klasse sind bei Bayes bekannt aber bei ML unbekannt, daher wird eher ML bei Sprach-/Bildverarbeitung und Bayes bei Textverarbeitung verwendet.
 
 \subsubsection{Gegeben sei ein 2-dimensionales 2-Klassen Problem. Unter welchen Modellannahmen bekommt man eine lineare Entscheidungsgrenze im Bayes Klassifikator?}
-Bei gleichen und sphärischen Kovarianzmatrixen für alle Klassen.
+Bei gleichen und sphärischen Kovarianzmatritzen für alle Klassen.
 
 \subsubsection{Bei der statistischen Klassifikation verwendet man oft die logarithmische Likelihood-Funktion. Kann die Verwendung des Logarithmus das Klassifikationsergebnis ändern (Begrüundung)?}
 Das Klassifikationsergebnis bleibt das gleiche, da der Logarithmus eine monoton steigende Funktion ist und an der selben Stelle ein Maximum hat wie die ursprüngliche Funktion.
