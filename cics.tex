@@ -411,12 +411,12 @@ iid heißt, das die Samples $x_1, \cdots ,x_N$ statistisch unabhängig sind und 
 \subsection{Explain the parameters of Gaussian Mixture Models! Explain the EM algorithm that estimates these parameters}
 
 \begin{align*}
-P(X|\Theta) = \sum_{n=0}^N \omega_n \text{ } \mathcal{N}(X|\mu_n, \Sigma_n) \rightarrow \text{Sum of weighted gaussians}
+P(X|\Theta) = \sum_{m=1}^M \omega_m \text{ } \mathcal{N}(X|\mu_m, \Sigma_m) \rightarrow \text{Sum of weighted gaussians}
 \end{align*}
 $\omega_i \cdots$ weight of one gaussian distribution \\
 $\mu_i \cdots$ mean value of gaussian \\
 $\Sigma_i \cdots$ standard deviation of Gaussian \\
-$N \cdots$ number of Gaussian distributions \\
+$M \cdots$ number of Gaussian distributions \\
 $\mathcal{N} \cdots$ Gauss Function \\
 \\
 EM-Algorithmus
