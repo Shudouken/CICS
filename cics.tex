@@ -88,10 +88,10 @@ direct analytical solution
 \subsection{What issues can arise during gradient descent?}
 There could be multiple local minima and the algorithm (gradient descent) may get stuck in one of them. If the learning rate is too small it leads to slow convergence, if it's too large it leads to divergence (oscillations)
 
-\subsection{What is the design matrix? What are it's dimensions?}
-The design matrix is a matrix consisting of all the transposed training features, it's dimensions are: $m \cdot (n+1)$ where $m$ is the number of training examples and $n$ is the number of features.
+\subsection{What is the design matrix? What are its dimensions?}
+The design matrix is a matrix consisting of all the transposed training features, its dimensions are: $m \cdot (n+1)$ where $m$ is the number of training examples and $n$ is the number of features.
 
-\subsection{Analytical solution for linear regression? What are it's components?}
+\subsection{Analytical solution for linear regression? What are its components?}
 The solution can be calculated by setting all partial derivatives of the cost function to 0, then using the Moore-Penrose Pseudoinverse of the design matrix $X$ with the formula: $\theta^* = (X^T X)^{-1}X^Ty$ \\
 $y$ is the output/target vector.
 
